@@ -12,6 +12,20 @@ public class MissingNumber_Leetcode_268 {
         int act = missingNumber(nums);
         Assert.assertEquals(act, exp);
     }
+    @Test
+    public void test2(){
+        int[] nums = {0,1};
+        int exp = 2;
+        int act = missingNumber(nums);
+        Assert.assertEquals(act, exp);
+    }
+    @Test
+    public void test3(){
+        int[] nums = {9,6,4,2,3,5,7,0,1};
+        int exp = 8;
+        int act = missingNumber(nums);
+        Assert.assertEquals(act, exp);
+    }
 
 
     public int missingNumber(int[] nums) {
