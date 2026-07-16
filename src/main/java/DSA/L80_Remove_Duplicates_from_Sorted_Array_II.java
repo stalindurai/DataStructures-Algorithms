@@ -2,26 +2,26 @@ package DSA;
 
 public class L80_Remove_Duplicates_from_Sorted_Array_II {
 
-  /*
-    * use two pointers
-  	* first pointer  to 0
-  	* second point to 1
-  	* start comparing both pointers, if (p1!=p2) ,  increment both the pointers p1 and p2. 
-  	* else
-  	* increment p2 counter.count++;
-  	* while(p2<length-1)
-  	* if (p1==p2)
-  	*  increment count value.and p2.
-  	* else
-  	*    value[p1+1]=value[p2];
-  	*    p1=p2;
-  	*    p2 += 1;
-  	*    break;
-  	*    
-  	* once the loop ends,
-  	* whil(p1<=length-1)
-  	* fill the remaining index values with -101.
-	* /
+ //  /*
+ //    * use two pointers
+ //  	* first pointer  to 0
+ //  	* second point to 1
+ //  	* start comparing both pointers, if (p1!=p2) ,  increment both the pointers p1 and p2. 
+ //  	* else
+ //  	* increment p2 counter.count++;
+ //  	* while(p2<length-1)
+ //  	* if (p1==p2)
+ //  	*  increment count value.and p2.
+ //  	* else
+ //  	*    value[p1+1]=value[p2];
+ //  	*    p1=p2;
+ //  	*    p2 += 1;
+ //  	*    break;
+ //  	*    
+ //  	* once the loop ends,
+ //  	* whil(p1<=length-1)
+ //  	* fill the remaining index values with -101.
+	// * /
 
   @Test
 		public static void Test1() {
