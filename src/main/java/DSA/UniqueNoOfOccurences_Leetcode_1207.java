@@ -22,12 +22,13 @@ public class UniqueNoOfOccurences_Leetcode_1207 {
 
     public boolean uniqueOccurences(int[] arr){
         HashMap<Integer, Integer> map = new HashMap<>();
-        for(int i=0;i<arr.length;i++){
-//            map.getOrDefault(arr[i]:0)+1, 1);
-        }
-
-        return false;
+		//int prevElement = -1001;
+		for (int i=0;i<nums.length;i++){
+			map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+			
+		}
+		Set<Integer> occurrences = new HashSet<>(map.values()); 
+		return map.values().size() == occurrences.size();
+		//return true;
     }
-
-
 }
